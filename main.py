@@ -1,33 +1,4 @@
-# #------------№1\
-# import sys
-# import random
-# import re
-#
-# dict_sample = {1:[random.randint(1,5),random.randint(1,5),random.randint(1,5)],
-#                2:[random.randint(3,8),random.randint(1,8),random.randint(1,9)]}
-#
-#
-#
-# print(dict_sample)
-# x = dict_sample
-# # print("Введите 1 или 2")
-# # dict_sample[input()] = [random.randint(1,3)]
-# # print(dict_sample)
-# # print(len(dict_sample))
-#
-# def Add(x):
-#     dict_sample[input()]=[random.randint(3,5)]
-#     print(x)
-#     return dict_sample
-#
-#
-# Add(x)
-#
-#
-# print(re.findall(r':',dict_sample))
-
-
-# Номер 1 хороший вид
+# Номер 1
 # class Hash:
 #     table = []
 #
@@ -149,8 +120,6 @@
 
 
 
-
-
  # # Номер 5
 # class HTML:
 #     resultCode = []
@@ -214,9 +183,41 @@
 
 
 # #-------------8
-# from tkinter import Tk, Canvas, Frame, BOTH
+# from tkinter import Tk, Canvas, Frame, BOTH, NW
+# from PIL import Image, ImageTk
 #
 #
+# # Картинка
+# class Second(Frame):
+#     def __init__(self):
+#         super().__init__()
+#         self.initUI()
+#
+#     def initUI(self):
+#         self.master.title("Нереальная работа мысли и пера от Ильи Михайловича")
+#         self.pack(fill=BOTH, expand=1)
+#
+#         self.img = Image.open("Castle.JPG")
+#         self.tatras = ImageTk.PhotoImage(self.img)
+#
+#         canvas = Canvas(
+#             self, width=self.img.size[0] + 20,
+#             height=self.img.size[1] + 20
+#         )
+#
+#         canvas.create_image(10, 10, anchor=NW, image=self.tatras)
+#         canvas.pack(fill=BOTH, expand=1)
+#
+#
+# def main():
+#     root = Tk()
+#     ex = Second()
+#     root.mainloop()
+#
+#
+# if __name__ == '__main__':
+#     main()
+
 # class Example(Frame):
 #
 #     def __init__(self):
@@ -331,10 +332,10 @@
 #
 #
 # # МОСТ
-# #         canvas.create_arc(
-# #             330, 280, 400, 350, start=0,
-# #             extent=210, width=2
-# #         )
+#         canvas.create_arc(
+#             330, 280, 400, 350, start=0,
+#             extent=210, width=2
+#         )
 #         canvas.create_arc(330, 280, 390, 350,
 #                      start=0, extent=180,
 #                     outline='darkblue',
@@ -352,8 +353,7 @@
 #
 #
 #
-#         # Wood - это точки для создания многоугольника, тут можно сделать треуголник и из нескольких ёлку,
-            # там по 3 одинаковые координаты 2-раза и две одинаковые для получения треугольника
+#         # Wood
 #
 #
 #
@@ -369,14 +369,16 @@
 #
 #
 #         canvas.pack(fill=BOTH, expand=1)
-#
-#
+
+
 # def main():
 #     root = Tk()
 #     ex = Example()
 #     root.geometry("500x300+300+300")
 #     root.mainloop()
-#
-#
+
+
+
+
 # if __name__ == '__main__':
 #     main()
